@@ -1,0 +1,27 @@
+<div class="hid">
+    <div class="container">
+        <img src="assets/images/pop2jpg.jpg" alt="Snow" style="width:100%;">
+        <div class="bottom-left">
+            <h2>POP</h2>
+            <p-avatar icon="pi pi-share-alt" styleClass="p-mr-2" size="large" shape="circle"
+                [style]="{'background-color':'#f0f0f0', 'color': '#737373'}"></p-avatar>
+        </div>
+    </div>
+</div>
+
+<div class="top">
+    <p-tabView>
+        <p-tabPanel header="Tracks">
+            <app-traks></app-traks>
+        </p-tabPanel>
+        <p-tabPanel header="Albums">
+            <app-albums></app-albums>
+        </p-tabPanel>
+        <p-tabPanel header="Artists">
+            <app-arts></app-arts>
+        </p-tabPanel>
+        <p-tabPanel header="Comments">
+            <app-commentss></app-commentss>
+        </p-tabPanel>
+    </p-tabView>
+</div>

@@ -1,0 +1,441 @@
+<div class="p-grid p-ml-1">
+    <div class="p-lg-2 p-md-2 p-col-6 point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/fresh.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Fresh &amp; New</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">39</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <div class="p-lg-2 p-md-2 p-col-6 point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/indies.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Indie</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">38</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <div class="p-lg-2 p-md-2 p-col-6 p-d-none p-d-md-inline-flex point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/sing.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Singer-Songwriter</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">41</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <div class="p-lg-2 p-md-2 p-col-6 p-d-none p-d-md-inline-flex point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/metal.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Metal</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">35</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <div class="p-lg-2 p-md-2 p-col-6 p-d-none p-d-md-inline-flex point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/beat.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Beatmaker's Arena</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">39</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <div class="p-lg-2 p-md-2 p-col-6 p-d-none p-d-md-inline-flex point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/time.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Time to Dream</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">47</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+</div>
+
+
+<div class="p-grid p-ml-1">
+    <div class="p-lg-2 p-md-2 p-col-6 point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/fresh.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Fresh &amp; New</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">39</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <div class="p-lg-2 p-md-2 p-col-6 point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/indies.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Indie</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">38</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <div class="p-lg-2 p-md-2 p-col-6 p-d-none p-d-md-inline-flex point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/sing.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Singer-Songwriter</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">41</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <div class="p-lg-2 p-md-2 p-col-6 p-d-none p-d-md-inline-flex point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/metal.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Metal</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">35</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <div class="p-lg-2 p-md-2 p-col-6 p-d-none p-d-md-inline-flex point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/beat.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Beatmaker's Arena</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">39</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <div class="p-lg-2 p-md-2 p-col-6 p-d-none p-d-md-inline-flex point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/time.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Time to Dream</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">47</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+</div>
+
+
+<div class="p-grid p-ml-1">
+    <div class="p-lg-2 p-md-2 p-col-6 point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/fresh.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Fresh &amp; New</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">39</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <div class="p-lg-2 p-md-2 p-col-6 point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/indies.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Indie</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">38</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <div class="p-lg-2 p-md-2 p-col-6 p-d-none p-d-md-inline-flex point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/sing.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Singer-Songwriter</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">41</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <div class="p-lg-2 p-md-2 p-col-6 p-d-none p-d-md-inline-flex point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/metal.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Metal</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">35</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <div class="p-lg-2 p-md-2 p-col-6 p-d-none p-d-md-inline-flex point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/beat.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Beatmaker's Arena</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">39</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+
+    <div class="p-lg-2 p-md-2 p-col-6 p-d-none p-d-md-inline-flex point">
+        <p-card styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/time.jpg">
+                <div class="play">
+                    <i class="pi pi-play" id="play" pTooltip="Play" tooltipPosition="bottom"></i>
+                </div>
+            </ng-template>
+
+            <div class="entity_information">
+                <div>
+                    <span class="entity_information_title" itemprop="name">Time to Dream</span>
+                    <br>
+                    <span class="entity_information_secondary">
+                        <span itemprop="numTracks">47</span> Tracks
+                    </span>
+                    <i class="pi pi-ellipsis-v" (click)="menu.toggle($event)"></i>
+                    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+
+                </div>
+            </div>
+        </p-card>
+    </div>
+</div>
+
+<button pButton pRipple type="button" label="More Playlists" class="p-button-outlined p-button-secondary"></button>

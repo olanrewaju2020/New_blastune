@@ -1,0 +1,175 @@
+<div class="card">
+    <div>
+        <p-toolbar styleClass="p-mb-4">
+            <ng-template pTemplate="left">
+                <button pButton label=" Add " class="p-button-outlined" icon="pi pi-plus " style="margin-left: 25px; " (click)="openDialog()"></button>
+                <button pButton pRipple style="margin-left: 25px;" (click)="deleteArtist()" type="button" label="Delete" class="p-button-outlined p-button-danger p-mr-2 p-mb-1"></button>
+                <!-- <p-button label="Rows" [badge]="" value="badgeLength(deductionResponseList)" styleClass="p-ml-3"></p-button> -->
+
+                <i class="pi pi-refresh" (click)="listArtist()" style="font-size: 1rem; color: #4283d4;margin-left: 20px;"></i>
+            </ng-template>
+        </p-toolbar>
+
+
+        <p-table #dt1 [value]="artistResponseList" dataKey="id" [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" [(selection)]="selectedProduct3" styleClass="p-datatable-responsive-demo" editMode="row" [paginator]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+            [globalFilterFields]="['name','email','recordlabel','image']">
+            <ng-template pTemplate="caption">
+                <div class="p-d-flex">
+                    <!-- <button pButton label="Clear" class="p-button-outlined" icon="pi pi-filter-slash" (click)="clear(dt1)"></button> -->
+                    <span class="p-input-icon-left p-ml-auto">
+                        <i class="pi pi-search"></i>
+                        <!-- <input pInputText type="text" (input)="dt1.filterGlobal($event.target.value, 'contains')"
+                            placeholder="Search keyword" /> -->
+                    </span>
+                </div>
+            </ng-template>
+
+            <ng-template pTemplate="header">
+                <tr>
+
+                    <th style="width: 3rem">
+                        <p-tableRadioButton></p-tableRadioButton>
+                    </th>
+                    <th>
+                        <div class="p-d-flex p-jc-between p-ai-center">
+                            Name
+
+                            <ng-template pTemplate="header">
+                                <div class="p-px-3 p-pt-3 p-pb-0">
+                                    <span class="p-text-bold">Name</span>
+                                </div>
+                            </ng-template>
+                            <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                                <p-multiSelect [ngModel]="value" placeholder="Any" (onChange)="filter($event.value)" optionLabel="name">
+                                    <ng-template let-option pTemplate="item">
+                                        <div class="p-multiselect-representative-option">
+                                            <img [alt]="option.label" src="assets/showcase/images/demo/avatar/{{option.image}}" width="32" style="vertical-align: middle" />
+                                            <span class="p-ml-1">{{option.name}}</span>
+                                        </div>
+                                    </ng-template>
+                                </p-multiSelect>
+                            </ng-template>
+
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="p-d-flex p-jc-between p-ai-center">
+                            Email
+
+                            <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                                <p-dropdown [ngModel]="value" (onChange)="filter($event.value)" placeholder="Any">
+                                    <ng-template let-option pTemplate="item">
+                                        <span [class]="'customer-badge status-' + option.value">{{option.email}}</span>
+                                    </ng-template>
+                                </p-dropdown>
+                            </ng-template>
+
+                        </div>
+                    </th>
+
+
+                    <th>
+                        <div class="p-d-flex p-jc-between p-ai-center">
+                            Record Label
+
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="p-d-flex p-jc-between p-ai-center">
+                            Image
+
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="p-d-flex p-jc-between p-ai-center">
+                            Datecreated
+
+                        </div>
+                    </th>
+                    <th>
+
+                    </th>
+
+                </tr>
+            </ng-template>
+
+            <ng-template pTemplate="body" let-result let-editing="editing" let-ri="rowIndex">
+                <tr [pEditableRow]="result" [pSelectableRow]="result">
+                    <td>
+                        <p-tableRadioButton [value]="result"></p-tableRadioButton>
+                    </td>
+
+                    <td>
+                        <span class="p-column-title">Name</span> {{result.name}}
+                    </td>
+
+                    <td>
+                        <span class="p-column-title">Email</span> {{result.email}}
+                    </td>
+
+                    <td>
+                        <span class="p-column-title">Record Label</span> {{result.recordlabel}}
+                    </td>
+
+                    <td>
+                        <span class="p-column-title">Image</span> {{result.image}}
+                    </td>
+
+
+                    <td>
+                        <span class="p-column-title">Datecreated</span> {{result.datecreated | date:'dd/MM/yyyy'}}
+                    </td>
+
+                    <td>
+                        <button pButton pRipple type="button" pInitEditableRow icon="pi pi-pencil" (click)="onRowEditInit(result)" class="p-button-rounded p-button-text"></button>
+                    </td>
+
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>
+
+<p-dialog header="Add Artist" [style]="{width: '800px'}" position="top" [(visible)]="display" [modal]="false" showEffect="fade">
+
+    <div style="line-height: 1.5">
+        <form [formGroup]="form">
+            <div>
+
+                <div class="p-fluid p-formgrid p-grid">
+
+                    <div class="p-field p-col-6">
+                        <label for="firstname2">Name</label>
+                        <input id="firstname2" type="text" class="form-control" formControlName="name" pInputText>
+                    </div>
+
+                    <div class="p-field p-col-6">
+                        <label for="firstname2">Email</label>
+                        <input id="firstname2" type="text" class="form-control" formControlName="email" pInputText>
+                    </div>
+                    <div class="p-field p-col-6">
+                        <label for="firstname2">Record Label</label>
+                        <input id="firstname2" type="text" class="form-control" formControlName="recordlabel" pInputText>
+                    </div>
+                    <div class="p-col-12">
+                        <p-fileUpload name="file" url="./upload.php" (onUpload)="onUpload($event)" accept="image/*">
+                            <ng-template pTemplate="content">
+                                <ul *ngIf="uploadedFiles.length">
+                                    <li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes</li>
+                                </ul>
+                            </ng-template>
+                        </p-fileUpload>
+                    </div>
+
+
+                </div>
+            </div>
+        </form>
+        <p-footer style="float: right;">
+            <button pButton pRipple type="submit" (click)="addArtist()" icon="pi pi-plus" [disabled]="!form.valid" label="Save" class="p-button-text"></button>
+        </p-footer>
+    </div>
+</p-dialog>

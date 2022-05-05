@@ -1,0 +1,43 @@
+ol {
+    list-style-type: none;
+    
+    cursor: pointer;
+}
+li{
+    color: rgb(189, 180, 180);
+}
+li:hover{
+    color: rgb(231, 220, 220);;
+}
+.p-button-danger{
+    background: (255, 0, 191);
+}
+.about{
+    padding-top: 135px;
+    padding-left: 10px;
+    
+    cursor: pointer;
+    font-size: 12px;
+    
+}
+span{
+    color: rgb(189, 180, 180);
+}
+span:hover{
+    color: rgb(231, 220, 220);
+}
+:host ::ng-deep .p-dropdown {
+    width: 150px;
+    margin-left: 10px;
+    background-color: rgb(22, 21, 21);
+    border: none;
+    outline: none;
+  }
+i{
+    cursor: pointer;
+    color: grey;
+    &:hover{
+        color: #fff;  
+    }
+}
+

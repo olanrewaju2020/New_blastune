@@ -1,0 +1,108 @@
+
+.btn4{
+    font-size: 12px;
+    width: 80px;
+    height: 30px;
+}
+// label{
+//     width: 30px;
+//     line-height: 30px;
+//     border-radius: 50%;
+//     text-align: center;
+//     color: gray;
+//     cursor: pointer;
+//     transition: 0.5s;
+//     box-shadow: -5px -5px 8px #edeff1,
+//     5px 5px 10px #cacfd8;
+// }
+// label:hover{
+//     box-shadow: -10px -10px 15px #edeff1,
+//     10px 10px 15px #cacfd8;
+// }
+input{
+    // width: 300px;
+    // height: 100%;
+    // background-color: transparent;
+    // border: none;
+    // border-radius: none;
+    // outline: none;
+    // font-size: 20px;
+    // color: rgb(235, 72, 100);
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: medium;
+    background-color: transparent;
+
+}
+input::before{
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+}
+input::after{
+    width: 500px;
+    background-color: gray;
+    outline: transparent;
+}
+// #love{
+//     display: flex;
+//     flex: 0.7;
+//     align-items: center;
+//     background-color: whitesmoke;
+//     border-radius: 5px;
+// }
+.back{
+    background-color: #000;
+    color: orange;
+    width: 300px;
+}
+:host ::ng-deep .p-sidebar{
+ background-color: black;
+ width: 250px;
+}
+
+
+ol {
+    list-style-type: none;
+    
+    cursor: pointer;
+}
+li{
+    color: rgb(189, 180, 180);
+}
+li:hover{
+    color: rgb(231, 220, 220);;
+}
+.p-button-danger{
+    background: (255, 0, 191);
+}
+.about{
+    padding-top: 135px;
+    padding-left: 10px;
+    
+    cursor: pointer;
+    font-size: 12px;
+    
+}
+span{
+    color: rgb(189, 180, 180);
+}
+span:hover{
+    color: rgb(231, 220, 220);
+}
+:host ::ng-deep .p-dropdown {
+    width: 150px;
+    margin-left: 10px;
+    background-color: rgb(22, 21, 21);
+    border: none;
+    outline: none;
+  }
+i{
+    cursor: pointer;
+    color: grey;
+    &:hover{
+        color: #fff;  
+    }
+}
+

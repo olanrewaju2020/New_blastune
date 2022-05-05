@@ -1,0 +1,46 @@
+i{
+    background-color: rgb(245, 163, 204);
+    width: auto;
+    border-radius: 50%;
+    border: 1px solid pink;
+    height: auto;
+    position: absolute;
+    left: 25px;
+    margin-top: 5px;
+    cursor: pointer;
+    padding: auto;
+    font-size: 12px;
+
+}
+.card{
+    background-color: hsla(160, 100%, 79%, 0.5);
+    border-radius: 0%;
+    width: 100%;
+    height: 548px;
+    box-sizing: inherit;
+    
+}
+.video{
+//    margin-bottom: -20px;
+ margin-bottom: -5px;
+   height: 90px;
+   display: inline-block;
+    &:hover{
+        background-color: hsla(169, 100%, 63%, 0.5);
+        height: 110px;
+        // padding-bottom: 70px;
+        // margin-top: 10px;
+       
+    }
+}
+.btn5{
+    font-size: 12px;
+}
+h6{
+    padding-bottom: -5px;
+    font-size: 13px;
+    display: inline;
+}
+small{
+ font-size: 12px;
+}

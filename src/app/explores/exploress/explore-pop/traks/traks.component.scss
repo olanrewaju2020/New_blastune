@@ -1,0 +1,97 @@
+// .p-button-danger{
+
+//     width: 20px;
+//     height: 20px;
+//    position: absolute;
+//    left: 14px;
+//    margin-top: 10px;
+// }
+
+i {
+    background-color: rgb(245, 163, 204);
+    width: auto;
+    border-radius: 50%;
+    border: 1px solid pink;
+    height: auto;
+    position: absolute;
+    left: 25px;
+    margin-top: 5px;
+    cursor: pointer;
+    padding: auto;
+    font-size: 12px;
+}
+#music {
+    color: rgb(109, 109, 114);
+}
+#music:hover {
+    color: rgb(255, 0, 191);
+}
+.feat {
+    background-color: rgb(199, 167, 23);
+    padding: 1px 1px 1px 1px;
+    border-radius: 4px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    width: auto;
+}
+#secondary {
+    color: rgb(255, 0, 191);
+    font-size: 10px;
+    &:hover {
+        background: rgb(255, 0, 191);
+        color: white;
+    }
+}
+@media only screen and (max-width: 1010px) and (min-width: 0px) {
+    .stream {
+        margin: auto;
+    }
+}
+.spin {
+    box-sizing: border-box;
+}
+#play {
+    margin-bottom: -20px;
+    cursor: pointer;
+}
+h6 {
+    font-size: 14px;
+    margin-bottom: auto;
+}
+small {
+    font-size: 12px;
+}
+#btn {
+    color: black;
+    font-size: 10px;
+    float: right;
+    margin-top: 5px;
+    &:hover {
+        color: white;
+        background-color: black;
+    }
+}
+.stream {
+    margin-top: 30px;
+    margin-right: auto;
+}
+:host ::ng-deep .p-dropdown {
+    padding: -20px;
+}
+// ::-moz-placeholder { /* Firefox 19+ */
+//     color: pink;
+//     font-size: 14px;
+//   }
+// p-dropdown:placeholder-shown { border: 5px solid red; }
+/*nbzcj;bvx;vjnlbx/zzbnz padding*/
+.feats {
+    background-color: rgb(199, 167, 23);
+    padding: 1px 1px 1px 1px;
+    border-radius: 4px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    width: 50px;
+}

@@ -1,0 +1,125 @@
+.section-header {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.section-header h1 {
+    color: inherit;
+    margin-right: 10px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    color: #FFF;
+    font-family: futurademi,Arial,sans-serif;
+    text-shadow: 0 1px 8px #000;
+    font-weight: 600;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  button {
+      float: right;
+  }
+
+//   .entity_information {
+//     background-color: #f9f9f9;
+// }
+
+:host ::ng-deep .p-card{
+    background-color: #f9f9f9;
+}
+.entity_information_title {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline;
+}
+
+.entity_information_title {
+    font-size: .85714rem;
+}
+
+.entity_information_title {
+    margin-bottom: .42857rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: futurabook,Arial,sans-serif;
+}
+
+.entity_information_secondary {
+    display: inline-block;
+    margin-top: 8px;
+    display: inline;
+}
+
+
+i {
+    display: inline;
+    vertical-align: middle;
+    float: right;
+    cursor: pointer;
+}
+
+.entity_information_secondary, .track_information_artist {
+    font-size: 10px;
+    font-size: .71429rem;
+    font-family: futurabook,Arial,sans-serif;
+    text-transform: uppercase;
+}
+
+.entity_information_secondary {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.entity_information_secondary {
+    font-size: .71429rem;
+    font-family: futurabook,Arial,sans-serif;
+    text-transform: uppercase;
+}
+
+.entity_information_secondary>span {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+#play{
+    position: relative;
+    background-color: rgb(255, 0, 119);
+    padding: 5px ;
+    margin-top: -95px;
+    margin-right: 130px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+    color: #FFF;
+    
+  }
+  .pi-play{
+    position: absolute;
+    top: -50%;
+    left: 20px;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+   
+  }
+  #play:hover{
+    background-color:hsla(0, 0%, 67%, 0.4);
+  }
+
+  .point {
+      cursor: pointer;
+  }

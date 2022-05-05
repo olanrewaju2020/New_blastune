@@ -1,0 +1,28 @@
+<div style="overflow-x: hidden;">
+    <div class="p-grid">
+        <div class="p-lg-2   p-d-none p-d-lg-inline-flex">
+            <app-sidebar></app-sidebar>
+        </div>
+    
+        <div class="p-lg-10 p-col-12">
+            <div class="p-fliud">
+                <app-selections></app-selections>
+            </div>
+    
+            <router-outlet></router-outlet>
+            <div class=" p-jc-evenly">
+                <div class="p-grid">
+                    <div class="p-lg-6 p-col-12">
+                        <app-free-streaming></app-free-streaming>
+                    </div>
+                    <div class="p-col-12 p-lg-6 p-d-none p-d-xl-inline-flex">
+                        <app-test></app-test>
+                    </div>
+                </div>
+            </div>
+          
+            <app-hot-select></app-hot-select>
+            <app-explore></app-explore>
+        </div>
+    </div>
+</div>

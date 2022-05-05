@@ -1,0 +1,19 @@
+<div class="p-grid p-d-block p-mx-auto">
+    <div class=" p-col-12">
+        <div class="container mt-3">
+            <p-dropdown [options]="cities" [(ngModel)]="selectedCity1" placeholder="LATEST COMMENTS" optionLabel="name"
+                [showClear]="true"></p-dropdown>
+        </div>
+
+        <br>
+        <div class="container">
+            <span class="p-float-label">
+                <div class="p-inputgroup">
+                    <input type="text" pInputText placeholder="Write a review">
+                    <span class="p-inputgroup-addon"><i class="pi pi-send"></i></span>
+                </div>
+            </span>
+            <p style="font-size: 10px; margin-top: 5px;">250 Charaters left</p>
+        </div>
+    </div>
+</div>

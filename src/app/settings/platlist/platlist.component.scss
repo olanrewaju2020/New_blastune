@@ -1,0 +1,58 @@
+.tracks {
+    display: table-cell;
+    color: #737373;
+    font-size: 0.78571rem;
+    letter-spacing: 1px;
+    line-height: 1.3636;
+    text-transform: uppercase;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-weight: 600;
+}
+
+.section-tertiary.as-incentive {
+    background-color: #f9f9f9;
+    padding: 32px;
+}
+
+.section-tertiary {
+    color: #999;
+    text-align: center;
+}
+
+.btn-secondary-menu,
+.section-tertiary {
+    font-size: 0.92857rem;
+    font-family: futurabook, Arial, sans-serif;
+}
+
+.section-tertiary .s_wrap {
+    width: 100%;
+}
+
+i {
+    color: #999;
+}
+
+.section-tertiary.as-incentive .glyph {
+    width: 48px;
+    height: 48px;
+    padding: 16px;
+    border-radius: 100%;
+    background-color: #e8e8e8;
+    color: #999;
+}
+
+.icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.heading {
+    font-size: 1rem;
+    font-family: futurademi, Arial, sans-serif;
+    float: left;
+    margin-left: 80px;
+    margin-top: -35px;
+}

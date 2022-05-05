@@ -1,0 +1,129 @@
+<div>
+    <p-toolbar>
+        <div class="p-toolbar-group-left" id="love">
+            <div>
+                <button pButton pRipple type="button" icon="pi pi-bars"
+                    class="p-button-rounded p-button-text p-button-plain p-d-lg-none"
+                    (click)="visibleSidebar2=true"></button>
+            </div>
+            <span class="p-input-icon-left">
+                <i class="pi pi-search"></i>
+                <input type="text" pInputText placeholder="Search" />
+            </span>
+        </div>
+
+        <div class="p-toolbar-group-right">
+            <button pButton pRipple type="button" (click)="showBasicDialog()" label="Log In"
+                class="p-button-danger p-mr-2 btn4"></button>
+        </div>
+    </p-toolbar>
+</div>
+
+<app-login></app-login>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p-sidebar [(visible)]="visibleSidebar2" [baseZIndex]="10000">
+    <div style="padding-top: 10px; padding-left: 10px;">
+        <div class="p-d-flex">
+            <div class="p-mr-2"> <img
+                    src="https://cdn1.iconfinder.com/data/icons/jetflat-multimedia-vol-2/90/004_066_music_note_key_song_tone-128.png"
+                    alt="" width="50px">
+            </div>
+            <div class="p-ml-2 p-mt-3">
+                <h6 style="color: #fff;">Blastune Music</h6>
+            </div>
+
+        </div>
+    </div>
+    <div style="padding-top: 15px">
+        <ol style="margin-left: -15px;">
+            <li routerLink="/main/dashboard">Home</li>
+            <li routerLink="/main/explores">Explore</li>
+            <li routerLink="/main/radios">Radios</li>
+            <li routerLink="/main/list"> Spotlight</li>
+            <li (click)="shows()">Admin <i class="pi pi-angle-right dropdown"></i>
+                <div class="sub-menu" *ngIf="!show">
+                    <a routerLink="/main/dashboard" class="sub-item">Dashboard</a>
+                    <a routerLink="/main/album" class="sub-item"> Album</a>
+                    <a routerLink="/main/song" class="sub-item"> Song</a>
+                    <a routerLink="/main/aplaylist" class="sub-item"> Playlist</a>
+                    <a routerLink="/main/account" class="sub-item"> Account</a>
+                    <a routerLink="/main/artist" class="sub-item"> Artist</a>
+                </div>
+            </li>
+            <!-- <li>
+        <div class="item">
+            <a class="sub-btn" (click)="shows()">Admin <i class="pi pi-angle-right dropdown" ></i></a>
+            <div class="sub-menu" *ngIf="show" >
+                <a href="#" class="sub-item">Dashboard</a>
+                <a href="#" class="sub-item"> Album</a>
+                <a href="#" class="sub-item"> Song</a>
+                <a href="#" class="sub-item"> Playlist</a>
+                <a href="#" class="sub-item"> Account</a>
+                <a href="#" class="sub-item"> Artist</a>
+            </div>
+        </div>
+        </li> -->
+        </ol>
+    </div>
+    <div class="container">
+        <hr>
+    </div>
+    <div style="text-align: center;">
+        <p style="color: rgb(189, 180, 180); text-align: left; padding-left: 15px; color: #d1d1d1;
+        font-size: 14px;
+        letter-spacing: 1px; margin-top: 10px;">Are you an artist?</p>
+        <button pButton pRipple type="button" label="Upload Your Music" class="p-button-danger"></button>
+    </div>
+    <!-- <div class="about">
+        <div>
+            <span><a>Licensing</a> </span>
+            <span style="padding-left: 5px;"><a>Developers</a> </span>
+        </div>
+
+        <div>
+            <span><a>Help center</a> </span>
+            <span style="padding-left: 5px;"><a>Contact us</a> </span>
+        </div>
+        <div>
+            <span><a>Apps</a> </span>
+
+            <span style="padding-left: 5px;"><a>About us</a> </span>
+
+            <span style="padding-left: 5px;"><a>Jobs</a> </span>
+        </div>
+        <div>
+            <span><a>Legal</a> </span>
+        </div>
+    </div> -->
+    <div class="container" style="margin-top: 80px;">
+        <hr>
+    </div>
+    <div style="color: white; ">
+        <div class="p-d-flex p-jc-center">
+            <div class="p-mr-2"><i class="pi pi-facebook" style="width: 30px;"></i></div>
+            <div class="p-mr-2"><i class="pi pi-twitter"></i></div>
+            <div> <i class="pi pi-youtube" style="width: 30px; padding-left: 10px;"></i></div>
+        </div>
+    </div>
+    <div class="container">
+        <hr>
+    </div>
+    <p-dropdown [options]="assetStatus" optionLabel="label" optionValue="value"></p-dropdown>
+
+
+</p-sidebar>

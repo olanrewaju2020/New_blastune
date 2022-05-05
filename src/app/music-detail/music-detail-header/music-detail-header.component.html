@@ -1,0 +1,60 @@
+<div style="overflow-x: hidden;">
+    <div class="p-grid">
+
+        <div style="margin-left: 30px; margin-top: 20px;display: inline;">
+            <img src="assets/images/track.jpg" style="width: 280px; height: 280px; float: left; "
+                class="d-inline-block align-top" alt="track">
+        </div>
+        <span style="margin-left: 20px;  padding-top: 20px; margin-top: 25px; vertical-align: middle; display: inline;">
+            <p class="mt-5">Track</p>
+            <h3 style="margin-top: -15px;">Lainta feat. Vince Maranda - </h3>
+            <a href="#"
+                style=" font-size: 20px; color: black; text-decoration: none; margin-top: -25px; font-weight: 300; font-size: 14px;"
+                id="alf">ALFONSO LUGE</a>
+            <p style="font-size: 13px; color: #999; cursor: pointer;">#happy, #latin, #ceraration, #pop,
+                #fun,
+                #reggaeton</p>
+            <p style="margin-top: -10px; font-size: 13px;">From the album:<span
+                    style="text-decoration: underline; cursor: pointer;">Lainta
+                    feat.Vince
+                    Maranda -</span> </p>
+
+            <div>
+                <button pButton pRipple type="button" class="btn" pTooltip="Play" tooltipPosition="bottom"
+                    icon="pi pi-play" label="Play" style="background-color:#ff2847; font-weight: 100px; color:white;"
+                    class="p-button-outlined p-button-rounded p-button-danger"></button>
+                <button pButton pRipple type="button" pTooltip="Download" tooltipPosition="bottom"
+                    style="margin-left: 15px; background-color: hsla(0, 0%, 50%, 0.2); border: none; color: hsla(67, 66%, 0%, 0.5);"
+                    icon="pi pi-download" label="Free DOWNLOAD"
+                    class="p-button-outlined p-button-rounded p-button-danger"></button>
+
+                <span style="margin-left: 10px;">
+                    <p-avatar pTooltip="Add to share" class="btn" tooltipPosition="bottom" icon="pi pi-heart"
+                        styleClass="p-mr-2" size="large" shape="circle"></p-avatar>
+                    <p-avatar pTooltip="Add to Favourites" class="btn" tooltipPosition="bottom" icon="pi pi-share-alt"
+                        styleClass="p-mr-2" size="large" shape="circle"></p-avatar>
+                    <p-avatar pTooltip="Add to  playlist" class="btn" tooltipPosition="bottom" icon="pi pi-play"
+                        styleClass="p-mr-2" size="large" shape="circle"></p-avatar>
+                </span>
+            </div>
+        </span>
+    </div>
+
+
+    <!-- tab starts here -->
+    <div class="container-fluid mt-5">
+        <p-tabView>
+            <p-tabPanel header="TRACK">
+                <app-track></app-track>
+            </p-tabPanel>
+            <p-tabPanel header="LYRICS">
+                <app-lyrics></app-lyrics>
+            </p-tabPanel>
+            <p-tabPanel header="SIMILAR TRACKS">
+                <app-similar-track></app-similar-track>
+            </p-tabPanel>
+        </p-tabView>
+    </div>
+    <!-- tab ends here -->
+
+</div>

@@ -1,0 +1,42 @@
+<div class="all">
+    <img src="assets/images/settings_photo_1.jpg" alt="">
+    <div class="avatar bordered">
+
+        <div>
+            <picture>
+                <source srcset="https://images.jamendo.com/users/s8032/8032985/covers/1.200.jpg?du=1630331087040">
+                <img src="https://images.jamendo.com/users/s8032/8032985/covers/1.150.jpg?du=1630331087040"
+                    style="cursor: pointer;">
+            </picture>
+        </div>
+
+    </div>
+    <p class="name">
+        @larryboy
+    </p>
+
+    <div class="buttons">
+        <button pButton pRipple type="button" icon="pi pi-users" label="Follow"
+            class="p-button-rounded p-button-secondary"></button>
+
+        <p-avatar pTooltip="Add to share" icon="pi pi-share-alt" size="large"
+            [style]="{'color': '#737373', 'margin-left': '20px'}" shape="circle">
+        </p-avatar>
+    </div>
+    <div class="container-fluid">
+        <p-tabView>
+            <p-tabPanel header="Overview">
+                <app-overview></app-overview>
+            </p-tabPanel>
+            <p-tabPanel header="Playlists">
+                <app-platlist></app-platlist>
+            </p-tabPanel>
+            <p-tabPanel header="Favourites">
+                <app-favourites></app-favourites>
+            </p-tabPanel>
+            <p-tabPanel header="Activity">
+                <app-activity></app-activity>
+            </p-tabPanel>
+        </p-tabView>
+    </div>
+</div>

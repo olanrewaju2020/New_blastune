@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
+
+ol {
+    list-style-type: none;
+    
+    cursor: pointer;
+}
+li {
+    color: #d1d1d1;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+li:hover {
+    color: #fff;
+}
+.p-button-danger {
+    background: (255, 0, 191);
+    margin-right: 35px;
+    margin-top: -10px;
+}
+.about {
+    margin-top: 195px;
+    padding-left: 10px;
+    color: #d1d1d1;
+    cursor: pointer;
+    font-size: 12px;
+}
+span {
+    color: rgb(189, 180, 180);
+}
+span:hover {
+    color: rgb(231, 220, 220);
+}
+:host ::ng-deep .p-dropdown {
+    width: 150px;
+    margin-left: 10px;
+    background-color: rgb(22, 21, 21);
+    border: none;
+    outline: none;
+}
+i {
+    cursor: pointer;
+    color: grey;
+    &:hover {
+        color: #fff;
+    }
+}
+
+hr {
+    background-color: #fff;
+    height: 1px;
+    display: block;
+}

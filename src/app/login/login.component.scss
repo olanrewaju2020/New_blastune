@@ -1,0 +1,96 @@
+:host ::ng-deep .p-dialog .p-dialog-header {
+    border-bottom: 0 none;
+    background: #ff1f59;
+    color: #fff;
+    padding: 1.5rem;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+:host ::ng-deep .p-dialog .p-dialog-content {
+    background: #f2f2f2;
+    color: #495057;
+    padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.sign {
+    color: #7d7d7d;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.facebook {
+    width: 120px;
+    height: 37px;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    background-position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.google {
+    width: 120px;
+    height: 37px;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    background-position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+}
+
+.apple {
+    width: 120px;
+    height: 37px;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    background-position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+}
+
+input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.p-button-raised {
+    display: inline;
+    vertical-align: middle;
+    float: right;
+}
+
+.forgot {
+    cursor: pointer;
+    display: inline;
+    margin-top: 20px;
+    color: #ff1f59;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.account {
+    color: #7d7d7d;
+    font-size: 14px;
+    text-align: center;
+}
+
+.signup {
+    color: #7d7d7d;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: -15px;
+}

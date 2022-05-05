@@ -1,0 +1,120 @@
+<div style="overflow-x: hidden;" class="p-d-none p-d-lg-inline-flex">
+    <div class="p-grid">
+
+        <div style="margin-left: 30px; margin-top: 20px;display: inline;">
+            <img src="https://usercontent.jamendo.com/?type=album&id=450676&width=400&trackid=1876086"
+                class="d-inline-block align-top" alt="track">
+        </div>
+        <span
+            style="margin-left: 20px;  padding-top: 20px; margin-top: 100px; vertical-align: middle; display: inline;">
+            <p class="mt-5" style="font-size: smaller;">PLAYLIST</p>
+            <h3 style="margin-top: -15px; font-size: medium;">Fresh & New</h3>
+            <a href="#"
+                style=" font-size: 15px; color: black; text-decoration: none; margin-top: -25px; font-weight: 300; font-size: 14px;"
+                id="alf">@JAMENDO MUSIC</a>
+
+
+
+            <div>
+                <button pButton pRipple type="button" class="btn" pTooltip="Play" tooltipPosition="bottom"
+                    icon="pi pi-play" label="Play" style="background-color:#ff2847; font-size: 14px; color:white; "
+                    class="p-button-outlined p-button-rounded p-button-danger"></button>
+                <button pButton pRipple type="button" pTooltip="Download" tooltipPosition="bottom"
+                    style="margin-left: 15px; background-color: hsla(0, 0%, 50%, 0.2); border: none; color: hsla(67, 66%, 0%, 0.5); font-size: 14px; "
+                    icon="pi pi-download" label="Free DOWNLOAD"
+                    class="p-button-outlined p-button-rounded p-button-danger"></button>
+
+                <span style="margin-left: 10px;">
+                    <button pButton pRipple type="button" pTooltip="Add to Favourites" tooltipPosition="bottom"
+                        icon="pi pi-heart" class="p-button-rounded p-button-help p-button-text p-mr-2"
+                        style="background-color:hsla(0, 0%, 50%, 0.2) ; font-size: 14px; color: gray; padding: 20px;"></button>
+                    <button pButton pRipple type="button" pTooltip="Add to share" tooltipPosition="bottom"
+                        icon="pi pi-share-alt" class="p-button-rounded p-button-help p-button-text  p-mr-2"
+                        style="background-color:hsla(0, 0%, 50%, 0.2) ; font-size: 14px; color: gray; padding: 10px;"></button>
+                </span>
+            </div>
+        </span>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div style="margin-top: 20px;" class="p-d-lg-none">
+    <div style="display: inline; ">
+        <div style="margin-left: 10px;" class="person-item p-d-flex p-ai-center">
+            <!-- <i class="pi pi-play" pTooltip="Play" tooltipPosition="bottom"></i> -->
+            <img src="https://usercontent.jamendo.com/?type=album&id=450676&width=400&trackid=1876086" width="50px">
+            <div style="margin-left: 10px;">
+                <div>
+                    <p>PLAYLIST</p>
+                    <h6>Fresh & New</h6>
+                </div>
+                <small class="muted-text"> <a href="#"
+                        style=" font-size: 15px; color: black; text-decoration: none; margin-top: -25px; font-weight: 300; font-size: 14px;"
+                        id="alf">@JAMENDO MUSIC</a></small>
+
+            </div>
+        </div>
+    </div>
+    <div style=" margin: 10px;">
+        <div class="p-mr-5 ">
+            <span>
+                <div>
+                    <button pButton pRipple type="button" class="btn" pTooltip="Play" tooltipPosition="bottom"
+                        icon="pi pi-play" style="background-color:#ff2847; font-size: 14px; color:white; "
+                        class="p-button-outlined p-button-rounded p-button-danger"></button>
+                    <button pButton pRipple type="button" pTooltip="Download" tooltipPosition="bottom"
+                        style="margin-left: 15px; background-color: hsla(0, 0%, 50%, 0.2); border: none; color: hsla(67, 66%, 0%, 0.5); font-size: 14px; "
+                        icon="pi pi-download" class="p-button-outlined p-button-rounded p-button-danger"></button>
+
+                    <span style="margin-left: 10px;">
+                        <!-- <p-avatar pTooltip="Add to share" class="btn" tooltipPosition="bottom" icon="pi pi-heart"
+                        Class="p-mr-2 " size="large" shape="circle" ></p-avatar>
+                        <p-avatar pTooltip="Add to Favourites" class="btn" tooltipPosition="bottom" icon="pi pi-share-alt"
+                            styleClass="p-mr-2" size="large" shape="circle"></p-avatar> -->
+                        <button pButton pRipple type="button" pTooltip="Add to Favourites" tooltipPosition="bottom"
+                            icon="pi pi-heart" class="p-button-rounded p-button-help p-button-text p-mr-2"
+                            style="background-color:hsla(0, 0%, 50%, 0.2) ; font-size: 14px; color: gray; padding: 20px;"></button>
+                        <button pButton pRipple type="button" pTooltip="Add to share" tooltipPosition="bottom"
+                            icon="pi pi-share-alt" class="p-button-rounded p-button-help p-button-text"
+                            style="background-color:hsla(0, 0%, 50%, 0.2) ; font-size: 14px; color: gray; padding: 20px;"></button>
+                    </span>
+                </div>
+            </span>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<p-panel [toggleable]="true" class="p-d-lg-none">
+    <ng-template pTemplate="icons">
+        <!-- <button pButton class="p-panel-header-icon p-link" icon="pi pi-cog" (click)="menu.toggle($event)">
+        </button> -->
+        <p-menu #menu id="config_menu" [popup]="true"></p-menu>
+    </ng-template>
+    <h6 style="font-size: 13px;">ABOUT THIS PLAYLIST</h6>
+    <p style="font-size: 10px;"> Wonder what's fresh and new in Jamendo's music world? Look no further and join us in
+        celebrating great music! Visit us often as we will be updating this playlist regularly!</p>
+</p-panel>
+
+
+<div class="container-fluid mt-5">
+    <p-tabView>
+        <p-tabPanel header="PLAYLIST">
+            <app-hide></app-hide>
+        </p-tabPanel>
+        <p-tabPanel header="COMMENT">
+            <app-comment></app-comment>
+        </p-tabPanel>
+    </p-tabView>
+
+</div>
